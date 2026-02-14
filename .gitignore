@@ -1,0 +1,79 @@
+# Use following command to activate to svn-ignore-property on the current directory.
+#  > svn propset svn:ignore -F IGNORES.txt .
+
+
+# vi swap-files
+*.swp
+
+# pycharm file
+*.idea
+
+# Below is taken from the sample-package maintained by the
+# "Python Packaging Authority", a working group of the PSF.
+# cfr: https://raw.githubusercontent.com/pypa/sampleproject/master/.gitignore
+# It contains the current list of generated python-related files to exclude.
+
+# Backup files
+*.~
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+
+# C extensions
+*.so
+
+# virtualenv
+venv/
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Sphinx documentation
+docs/_build
+docs/_build/
+
+# Ignore generated CSV output
+data/csv/
+
+# Ignore extracted temporary files
+data/extracted/
+
+# Ignore logs
+var/log/
+
+# Ignore logs
+var/data/
+var/csv/
+
+# Ignore archive zip files if needed
+data/archive/
+
+.env

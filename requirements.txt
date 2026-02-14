@@ -1,0 +1,4 @@
+PyYAML
+requests
+oracledb
+python-dotenv

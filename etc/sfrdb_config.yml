@@ -1,0 +1,18 @@
+env: UAT
+paths:
+  base_dir: /home/id956955/apps/bics_sirius_sfrdb_api_etl
+  input_dir: ${base_dir}/var/data
+  log_dir:   ${base_dir}/var/log
+load:
+  db_list: [BBPDB01U, BBPDB01I]
+  batch_size: 2000
+  truncate: true     # or false
+databases:
+  BBPDB01I:
+    host: 127.0.0.1
+    port: 1543
+    sid:  BBPDB01I
+  BBPDB01U:
+    host: 127.0.0.1
+    port: 1544
+    sid:  BBPDB01U
