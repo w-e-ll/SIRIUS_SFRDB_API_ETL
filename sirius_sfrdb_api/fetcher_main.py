@@ -9,12 +9,12 @@ from datetime import datetime, timezone
 
 from dotenv import load_dotenv
 
-from bics_sirius_sfrdb_api.lib.fetcher_utils import cleaning_saved_today_records, write_csv
-from bics_sirius_sfrdb_api.lib.shared_logger import setup_logger
-from bics_sirius_sfrdb_api.lib.fetcher_flats import flat_account, flat_city, flat_country
-from bics_sirius_sfrdb_api.lib.fetcher_config import load_yaml_config
-from bics_sirius_sfrdb_api.lib.fetcher_to_csv import write_csv
-from bics_sirius_sfrdb_api.lib.fetcher_token_manager import TokenManager, auth_get
+from sirius_sfrdb_api.lib.fetcher_utils import cleaning_saved_today_records, write_csv
+from sirius_sfrdb_api.lib.shared_logger import setup_logger
+from sirius_sfrdb_api.lib.fetcher_flats import flat_account, flat_city, flat_country
+from sirius_sfrdb_api.lib.fetcher_config import load_yaml_config
+from sirius_sfrdb_api.lib.fetcher_to_csv import write_csv
+from sirius_sfrdb_api.lib.fetcher_token_manager import TokenManager, auth_get
 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -24,12 +24,12 @@ ENV = os.getenv("SFRDB_ENV", "ITT").upper()
 PAGE_SIZE = max(1, min(int(os.getenv("PAGE_SIZE", "200")), 1000))
 ONLY_ACTIVE = os.getenv("ONLY_ACTIVE", "false").lower() == "true"
 CONFIG_ENV = {
-    "ITT":  {"token_url": "https://idmuat-int-auth.dmzint.bics/auth/realms/gentes-itt/protocol/openid-connect/token",
-             "api_base":  "https://sfrdb-itt.bics.bc/api/v1"},
-    "UAT":  {"token_url": "https://idmuat-int-auth.dmzint.bics/auth/realms/gentes-uat/protocol/openid-connect/token",
-             "api_base":  "https://sfrdb-uat.bics.bc/api/v1"},
-    "PROD": {"token_url": "https://idm-int-auth.dmzint.bics/auth/realms/gentes/protocol/openid-connect/token",
-             "api_base":  "https://sfrdb.bics.bc/api/v1"},
+    "ITT":  {"token_url": "https://idmuat-int-auth.dmzint.xxx/auth/realms/gentes-itt/protocol/openid-connect/token",
+             "api_base":  "https://sfrdb-itt.xxx.bc/api/v1"},
+    "UAT":  {"token_url": "https://idmuat-int-auth.dmzint.xxx/auth/realms/gentes-uat/protocol/openid-connect/token",
+             "api_base":  "https://sfrdb-uat.xxx.bc/api/v1"},
+    "PROD": {"token_url": "https://idm-int-auth.dmzint.xxx/auth/realms/gentes/protocol/openid-connect/token",
+             "api_base":  "https://sfrdb.xxx.bc/api/v1"},
 }
 
 

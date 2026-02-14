@@ -5,9 +5,9 @@ import os
 
 from dotenv import load_dotenv
 
-from bics_sirius_sfrdb_api.lib.shared_logger import setup_logger
-from bics_sirius_sfrdb_api.lib.uploader_config import load_yaml_config
-from bics_sirius_sfrdb_api.lib.uploader_service import run_uploader
+from sirius_sfrdb_api.lib.shared_logger import setup_logger
+from sirius_sfrdb_api.lib.uploader_config import load_yaml_config
+from sirius_sfrdb_api.lib.uploader_service import run_uploader
 
 load_dotenv()
 

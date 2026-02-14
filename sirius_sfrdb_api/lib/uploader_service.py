@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 import logging
 
-from bics_sirius_sfrdb_api.lib.uploader_utils import (
+from sirius_sfrdb_api.lib.uploader_utils import (
     discover_latest_date_folder,
     discover_input_files_from_folder,
     load_one_table,
 )
-from bics_sirius_sfrdb_api.lib.uploader_db import OracleClient
+from sirius_sfrdb_api.lib.uploader_db import OracleClient
 
 
 logger = logging.getLogger('uploader_service')

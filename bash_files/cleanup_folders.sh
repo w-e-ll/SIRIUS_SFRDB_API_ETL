@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # === Base directories ===
-BASE_DIR="/home/id956955/apps/bics_sirius_sfrdb_api_etl"
+BASE_DIR="/home/id956955/apps/sirius_sfrdb_api_etl"
 DATA_DIR="$BASE_DIR/var/data"
 
 # Keep latest N dated folders (YYYY-MM-DD)

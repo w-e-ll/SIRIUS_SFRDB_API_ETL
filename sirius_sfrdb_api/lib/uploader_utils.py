@@ -10,7 +10,7 @@ import oracledb
 from datetime import datetime, timezone
 from typing import Dict, List, Optional, Tuple
 
-from bics_sirius_sfrdb_api.lib.uploader_db import OracleClient
+from sirius_sfrdb_api.lib.uploader_db import OracleClient
 
 
 logger = logging.getLogger('uploader_utils')

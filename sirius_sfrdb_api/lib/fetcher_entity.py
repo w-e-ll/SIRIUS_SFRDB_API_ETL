@@ -6,7 +6,7 @@ import uuid
 from datetime import datetime, timezone
 
 
-from bics_sirius_sfrdb_api.fetcher_token_manager import auth_get
+from sirius_sfrdb_api.fetcher_token_manager import auth_get
 
 
 PAGE_SIZE = max(1, min(int(os.getenv("PAGE_SIZE", "200")), 1000))

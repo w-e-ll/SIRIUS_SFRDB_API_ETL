@@ -4,7 +4,7 @@ import logging
 
 from typing import Optional, List, Tuple
 
-from bics_sirius_sfrdb_api.lib.uploader_config import DBConfig
+from sirius_sfrdb_api.lib.uploader_config import DBConfig
 
 logger = logging.getLogger('uploader_db')
 
